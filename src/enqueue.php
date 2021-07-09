@@ -36,6 +36,8 @@ function tgwf_enqueue_home_scripts() {
  * Loads the scripts and styles required for the directory page.
  */
 function tgwf_enqueue_directory_scripts() {
+	// Enqueue styles.
+	wp_enqueue_style( 'tgwf-jqvmap', URL_DIR . 'public/css/jqvmap.css', array(), '1.0', 'all' );
 
 	// Enqueue scripts.
 	wp_enqueue_script( 'tgwf-directory', URL_DIR . 'public/js/directory.js', array(), '1.0', true );						
@@ -50,5 +52,5 @@ function tgwf_enqueue_directory_scripts() {
  * Loads the scripts and styles required for the green web check page.
  */
 function tgwf_enqueue_greencheck_scripts() {
-	wp_enqueue_script( 'tgwf-app-link', URL_DIR . 'js/browserdetect.js' , array(), '1.0', true );  
+	wp_enqueue_script( 'tgwf-app-link', URL_DIR . 'public/js/browserdetect.js' , array(), '1.0', true );  
 }
