@@ -2,6 +2,8 @@
  * Browserdetect function for correct download links
  * Copyright 2011-2011 The Green Web Foundation - Arend-Jan Tetteroo
  */
+
+(function($) {
 var BrowserDetect = {
     init: function () {
       this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
@@ -161,3 +163,5 @@ function doBrowserDetectLink () {
     $('.tgwf_green').attr('href', BrowserDetect.link);
 }
 doBrowserDetectLink();
+
+})( jQuery );
