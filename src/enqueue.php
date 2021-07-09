@@ -40,10 +40,10 @@ function tgwf_enqueue_directory_scripts() {
 	wp_enqueue_style( 'tgwf-jqvmap', URL_DIR . 'public/css/jqvmap.css', array(), '1.0', 'all' );
 
 	// Enqueue scripts.
-	wp_enqueue_script( 'tgwf-directory', URL_DIR . 'public/js/directory.js', array(), '1.0', true );						
-	wp_enqueue_script( 'tgwf-scripts', URL_DIR . 'public/js/tgwf.js' , array('tgwf-jquery'), '', false );		
-	wp_enqueue_script( 'tgwf-vmap', URL_DIR . 'public/js/jquery.vmap.js' , array('tgwf-jquery'), '1.0', true );
-	wp_enqueue_script( 'tgwf-vmap-world', URL_DIR . 'public/js/maps/jquery.vmap.world.js' , array('tgwf-jquery'), '1.0', true );
+	wp_enqueue_script( 'tgwf-directory', URL_DIR . 'public/js/directory.js', array( 'jquery' ), '1.0', true );						
+	wp_enqueue_script( 'tgwf-scripts', URL_DIR . 'public/js/tgwf.js' , array('jquery'), '', false );		
+	wp_enqueue_script( 'tgwf-vmap', URL_DIR . 'public/js/jquery.vmap.js' , array('jquery'), '1.0', true );
+	wp_enqueue_script( 'tgwf-vmap-world', URL_DIR . 'public/js/maps/jquery.vmap.world.js' , array('jquery'), '1.0', true );
 	wp_enqueue_script( 'tgwf-directory', URL_DIR . 'public/js/directory.js', array(), '1.0', true );						
 }
 
