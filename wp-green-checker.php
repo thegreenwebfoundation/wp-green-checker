@@ -21,5 +21,5 @@ define( 'URL_DIR', plugin_dir_url( __FILE__ ) );
 
 // Load core modules.
 require_once PDEV_DIR . 'src/templates.php';
-
+require_once PDEV_DIR . 'src/shortcodes/green-web-checker.php';
 
