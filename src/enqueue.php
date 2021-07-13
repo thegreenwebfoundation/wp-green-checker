@@ -54,6 +54,10 @@ function tgwf_enqueue_directory_scripts() {
  * Loads the scripts and styles required for the green web check page.
  */
 function tgwf_enqueue_greencheck_scripts() {
+
+	// Enqueue styles.
+	wp_enqueue_style( 'tgwf-searchform', URL_DIR . 'public/css/tgwf-searchform.css', array(), '1.0', 'all' );
+
 	wp_enqueue_script( 'tgwf-app-link', URL_DIR . 'public/js/browserdetect.js' , array(), '1.0', true );  
 }
 
@@ -71,8 +75,11 @@ function tgwf_register_shortcode_styles() {
 		return;
 	endif;
 
-	$response = wp_remote_get( URL_DIR . '/public/css/tgwf-shortcode.css' );
-	//$response = wp_remote_get( 'http://tgwf.local/wp-content/plugins/wp-green-checker/public/css/tgwf-shortcode.css' );
+	// Need this line when not working locally.
+	$response = wp_remote_get( URL_DIR . '/public/css/tgwf-searchform.css' );
+
+	// Need this line when working locally.
+	//$response = wp_remote_get( 'http://tgwf.local/wp-content/plugins/wp-green-checker/public/css/tgwf-searchform.css' );
 
 	if ( is_array( $response ) && ! is_wp_error( $response ) ) {
 		$headers = $response['headers']; // Array of http header lines.
