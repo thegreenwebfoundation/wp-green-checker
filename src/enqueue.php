@@ -6,6 +6,8 @@
  */
 
 add_action( 'wp', 'tgwf_register_scripts' );
+add_action( 'wp_footer', 'tgwf_register_shortcode_styles' );
+
 
 /**
  * Initialises the registration of scripts.
@@ -53,4 +55,27 @@ function tgwf_enqueue_directory_scripts() {
  */
 function tgwf_enqueue_greencheck_scripts() {
 	wp_enqueue_script( 'tgwf-app-link', URL_DIR . 'public/js/browserdetect.js' , array(), '1.0', true );  
+}
+
+
+
+/**
+ * Load scripts and styles conditionally and async.
+ */
+function tgwf_register_shortcode_styles() {
+
+	global $post;
+
+	// Only load your scripts and styles if the post contains your shortcode.
+	if ( ! has_shortcode( $post->post_content, 'green-checker-search-form' ) ) :
+		return;
+	endif;
+
+	$response = wp_remote_get( URL_DIR . '/public/css/tgwf-shortcode.css' );
+
+	if ( is_array( $response ) && ! is_wp_error( $response ) ) {
+		$headers = $response['headers']; // array of http header lines
+		$body    = $response['body']; // use the content
+		echo '<style>' . $body . '</style>';
+	}
 }

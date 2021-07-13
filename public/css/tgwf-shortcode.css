@@ -1,0 +1,5 @@
+/* Styles for the green web checker shortcode, which outputs the search form. */
+
+.tgwf-search-form__wrapper {
+	max-width: 800px;
+}
