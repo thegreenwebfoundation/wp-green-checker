@@ -2,4 +2,40 @@
 
 .tgwf-search-form__wrapper {
 	max-width: 800px;
+	min-height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem 0;
+}
+.tgwf-search-form {
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	padding: 1rem;
+}
+.tgwf-search-form form {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tgwf-search-form form > * {
+	height: 40px;
+}
+.tgwf-search-form form input {
+	width: 100%;
+}
+.tgwf-search-form__button {
+	flex: 1 0 0;
+}
+
+@media screen and (min-width: 480px) {
+
+	.tgwf-search-form form input {
+		min-width: 300px;
+		width: auto;
+	}
+	.tgwf-search-form__button {
+		flex: 0 0 0;
+		margin-left: 1rem;
+		min-width: 100px;
+	}
 }
