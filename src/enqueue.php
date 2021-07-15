@@ -76,10 +76,10 @@ function tgwf_register_shortcode_styles() {
 	endif;
 
 	// Need this line when not working locally.
-	//$response = wp_remote_get( URL_DIR . '/public/css/tgwf-searchform.css' );
+	$response = wp_remote_get( URL_DIR . '/public/css/tgwf-searchform.css' );
 
 	// Need this line when working locally.
-	$response = wp_remote_get( 'http://tgwf.local/wp-content/plugins/wp-green-checker/public/css/tgwf-searchform.css' );
+	//$response = wp_remote_get( 'http://tgwf.local/wp-content/plugins/wp-green-checker/public/css/tgwf-searchform.css' );
 
 	if ( is_array( $response ) && ! is_wp_error( $response ) ) {
 		$headers = $response['headers']; // Array of http header lines.
