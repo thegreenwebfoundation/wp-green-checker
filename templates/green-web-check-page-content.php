@@ -6,9 +6,12 @@
  *  @package tgwfgreenchecker
  */
 
-$green_check_result = tgwf_run_site_check();
-
+// If there were some search criteria passed in, perform the green web check.
 if ( isset( $_GET["url"] ) && ! empty( $_GET["url"] ) ) {
+
+	$green_check_result = tgwf_run_site_check();
+
+	var_dump( $green_check_result );
 
 	// We have a result.
 	if ( $green_check_result != null ) {
