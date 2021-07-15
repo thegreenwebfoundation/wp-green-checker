@@ -31,7 +31,7 @@ function tgwf_register_scripts() {
  * Loads the scripts and styles required for the homepage.
  */
 function tgwf_enqueue_home_scripts() {
-	wp_enqueue_script( 'tgwf-scripts', URL_DIR . 'public/js/tgwf.js' , array( 'tgwf-jquery', 'tgwf-moment' ), '1.0', false );
+	//wp_enqueue_script( 'tgwf-scripts', URL_DIR . 'public/js/tgwf.js' , array( 'tgwf-jquery', 'tgwf-moment' ), '1.0', false );
 }
 
 /**
@@ -39,6 +39,7 @@ function tgwf_enqueue_home_scripts() {
  */
 function tgwf_enqueue_directory_scripts() {
 	// Enqueue styles.
+	wp_enqueue_style( 'tgwf-checker', URL_DIR . 'public/css/tgwfchecker.css', array(), filemtime( URL_DIR . 'public/css/tgwfchecker.css' ), 'all' );
 	wp_enqueue_style( 'tgwf-jqvmap', URL_DIR . 'public/css/jqvmap.css', array(), '1.0', 'all' );
 
 	// Enqueue scripts.
@@ -55,6 +56,7 @@ function tgwf_enqueue_directory_scripts() {
 function tgwf_enqueue_greencheck_scripts() {
 
 	// Enqueue styles.
+	wp_enqueue_style( 'tgwf-checker', URL_DIR . 'public/css/tgwfchecker.css', array(), filemtime( PDEV_DIR . 'public/css/tgwfchecker.css' ), 'all' );
 	wp_enqueue_style( 'tgwf-searchform', URL_DIR . 'public/css/tgwf-searchform.css', array(), '1.0', 'all' );
 
 	// Enqueue scripts.

@@ -6,7 +6,7 @@
  */
 
 ?>
-<div class="tgw-light-grey-bg call-download">
+<div class="tgwf-app-cta">
 
 	<h2>Do you want to check your search results instantly? We invented a clever app just for that.</h2>
 	The Green Web app does not only show you if a site your are visiting is hosted green, but works as well when you perform a search with Google, Bing or Yahoo. All results are labeled real-time on your screen, so you even know before visiting a site if it is hosted green!

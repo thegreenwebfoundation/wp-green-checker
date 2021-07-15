@@ -1,0 +1,35 @@
+/* Styles for the checker and directory. */
+
+.tgwf-content__wrapper > div {
+	margin: 2rem 0;
+}
+
+.tgwf-result {
+	margin-top: 1rem;
+}
+.tgwf-result__smiley {
+	width: 250px;
+}
+
+@media screen and (min-width: 767px) {
+
+	.tgwf-content__wrapper > div {
+		margin: 4rem 0;
+	}
+	.tgwf-content__wrapper > div:last-child {
+		margin-bottom: 0;
+	}
+
+	.tgwf-result {
+		display: flex;
+	}
+	.tgwf-result > div:first-child {
+		width: 40%;
+	}
+	.tgwf-result > div:nth-child(2) {
+		width: 60%;
+	}
+	.tgwf-result__summary {
+		padding-right: 3rem;
+	}
+}
