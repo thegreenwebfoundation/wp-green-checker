@@ -14,6 +14,8 @@
 
 		$green_check_result = tgwf_run_site_check();
 
+		var_dump( $green_check_result );
+
 		// We have a result.
 		if ( null !== $green_check_result ) {
 			?>
