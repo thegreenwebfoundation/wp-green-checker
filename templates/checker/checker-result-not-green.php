@@ -16,7 +16,7 @@
 
 		<div>
 			<p><?php _e( 'Unfortunately, this website is hosted grey or we are not sure about the greenness of the hoster. For the check to work, (technical) information about green hosters worldwide is needed. This information is stored in the Green Hosts database.</p>
-			<p>Do you believe this information is incorrect?', 'tgwf' ); ?><a href="https://admin.thegreenwebfoundation.org">Login to our database.</a></p>
+			<p>Do you believe this information is incorrect?', 'tgwf' ); ?> <a href="https://admin.thegreenwebfoundation.org">Login to our database.</a></p>
 		</div>
 	</div>
 
