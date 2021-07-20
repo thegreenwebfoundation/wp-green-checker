@@ -39,7 +39,7 @@ function tgwf_enqueue_home_scripts() {
  */
 function tgwf_enqueue_directory_scripts() {
 	// Enqueue styles.
-	wp_enqueue_style( 'tgwf-checker', URL_DIR . 'public/css/tgwfchecker.css', array(), filemtime( PDEV_DIR . 'public/css/tgwfchecker.css' ), 'all' );
+	wp_enqueue_style( 'tgwf-directory', URL_DIR . 'public/css/directory.css', array(), filemtime( PDEV_DIR . 'public/css/directory.css' ), 'all' );
 	wp_enqueue_style( 'tgwf-jqvmap', URL_DIR . 'public/css/jqvmap.css', array(), '1.0', 'all' );
 
 	// Enqueue scripts.

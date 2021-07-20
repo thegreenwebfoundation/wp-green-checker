@@ -1,17 +1,7 @@
 /**
- * Include the following files on your page
-	<script type="text/javascript" src="http://www.thegreenwebfoundation.org/jqvmap/jqvmap/jquery.vmap.js">
-	<script type="text/javascript" src="http://www.thegreenwebfoundation.org/jqvmap/jqvmap/maps/jquery.vmap.world.js">
-	<link type="text/css" rel="stylesheet" media="screen" href="http://www.thegreenwebfoundation.org/jqvmap/jqvmap/jqvmap.css">
-
-And this one you are now reading off course
-	<script type="text/javascript" src="http://www.thegreenwebfoundation.org/wp-content/themes/wordpress-bootstrap-master/library/js/directory.js">
-
-	Now if you add a <div id="tgwf_directory"></div> on your page and you call attachDirectory in <script> tags, you should be good to go
-
-	You can copy this complete script to your own site and change it if needed
+ * Expects a page in the site to exist called called /directory.
+ * This should contain <div id="tgwf_directory"></div>, which attachDirectory inserts the directory into.
  */
-
 
 (function($) {
 	function attachDirectory() {
@@ -27,6 +17,7 @@ And this one you are now reading off course
 			$.getJSON('https://api.thegreenwebfoundation.org/data/directory?callback=?', function (data) {
 				var sample_data = {};
 				var providers = isos = 0;
+
 				$.each(data, function( iso, row ) {
 					if(row.providers){
 						sample_data[iso.toLowerCase()] = row.providers.length + ".00";
@@ -88,7 +79,7 @@ And this one you are now reading off course
 							}
 							providertext = "<p><a id='" + provider.id + "' name='" + provider.id + "'/><a class='providerlink providerlink-" + provider.id + "' data-providerid='" + provider.id + "' href='https://www.thegreenwebfoundation.org/thegreenweb/#providers/" + provider.id + "'>" + providernaam + "</a></p>";
 
-							providerinfo = "<p class='hide providerinfo' id=providerinfo-" + provider.id + ">Provider information here</p>";
+							providerinfo = "<p class='providerinfo hide' id=providerinfo-" + provider.id + ">Provider information here</p>";
 
 							$('#tgwf_directory').append(providertext);    
 							$('#tgwf_directory').append(providerinfo);    
