@@ -1,12 +1,13 @@
 /* Styles for the green web checker shortcode, which outputs the search form. */
 
 .tgwf-search-form__wrapper {
-	max-width: 800px;
 	min-height: 60vh;
+	max-width: 800px;
+	margin: auto;
+	padding: 2rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 2rem 0;
 }
 .tgwf-search-form {
 	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
