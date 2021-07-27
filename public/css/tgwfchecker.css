@@ -26,7 +26,7 @@
 	margin-top: 1rem;
 }
 .tgwf-result__smiley {
-	width: 250px;
+	width: 200px;
 }
 
 @media screen and (min-width: 767px) {
@@ -35,10 +35,10 @@
 		display: flex;
 	}
 	.tgwf-result > div:first-child {
-		width: 40%;
+		width: 35%;
 	}
 	.tgwf-result > div:nth-child(2) {
-		width: 60%;
+		width: 65%;
 	}
 	.tgwf-result__summary {
 		padding-right: 3rem;
