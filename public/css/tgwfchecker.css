@@ -1,0 +1,90 @@
+/* Styles for the checker and directory. */
+
+/* 1. BASE LAYOUT                     */
+/* 2. RESULT                          */
+/* 3. SOCIAL SHARE                    */
+
+
+/* 1. BASE LAYOUT                     */
+.tgwf-content__wrapper > div {
+	margin: 2rem 0;
+}
+
+@media screen and (min-width: 767px) {
+
+	.tgwf-content__wrapper > div {
+		margin: 4rem 0;
+	}
+	.tgwf-content__wrapper > div:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+/* 2. RESULT                          */
+.tgwf-result {
+	margin-top: 1rem;
+}
+.tgwf-result__smiley {
+	width: 250px;
+}
+
+@media screen and (min-width: 767px) {
+
+	.tgwf-result {
+		display: flex;
+	}
+	.tgwf-result > div:first-child {
+		width: 40%;
+	}
+	.tgwf-result > div:nth-child(2) {
+		width: 60%;
+	}
+	.tgwf-result__summary {
+		padding-right: 3rem;
+	}
+}
+
+
+/* 3. SOCIAL SHARE                    */
+
+#social a {
+    display: inline-block;
+    margin: 10px 6px 0 0;
+	padding: 6px 16px 6px 36px;
+	color: white;
+	text-decoration: none;
+	position: relative;
+}
+#social a:hover {
+	background-color: rgba( 0,0,0,0.6 ); 
+}
+
+.social-button i {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	height: 20px;
+	width: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
+
+.social-button__twitter {
+	background-color: #00aced;
+}
+.social-button__twitter i {
+	background-image: url( '../img/icons/twitter.svg' );
+}
+.social-button__linkedin {
+	background-color: #007bb6;
+}
+.social-button__linkedin i {
+	background-image: url( '../img/icons/linkedin.svg' );
+}
+.social-button__facebook {
+	background-color: #3b5998;
+}
+.social-button__facebook i {
+	background-image: url( '../img/icons/facebook.svg' );
+}
