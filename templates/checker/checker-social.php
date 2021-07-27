@@ -11,7 +11,7 @@ $page_title = rawurlencode( get_the_title() );
 
 <div class="tgwf__social-share">
 	<!-- Social buttons -->
-	<br><strong>Share this result on social media.</strong><br>
+	<strong>Share this result on social media.</strong>
 	<div id="social">
 		<?php
 		if ( ! isset( $_SERVER['HTTPS'] ) ) {
