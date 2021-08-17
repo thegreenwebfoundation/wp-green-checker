@@ -7,7 +7,7 @@
 
 ?>
 
-<h1>Result of the green web check &mdash; <?php echo esc_url( $green_check_result->url ); ?> is hosted <span class="tgw-green">green</span>!</h1>
+<h1>Result of the green web check &mdash; <?php echo esc_html( $green_check_result->url ); ?> is hosted <span class="tgw-green">green</span>!</h1>
 
 <div class="tgwf-result">	
 
@@ -59,8 +59,8 @@
 	<p><strong>Is this your website? Implement this badge on your website and show the world you are green.</strong></p>	
 	<p>Save this image or use the code below to implement this badge on your website.</p>
 
-	<img src="https://api.thegreenwebfoundation.org/greencheckimage/<?php echo $green_check_result->url; ?>?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">	
-	<pre><code><?php echo htmlspecialchars( '<img src="https://api.thegreenwebfoundation.org/greencheckimage/') . esc_url( $green_check_result->url ) . '?nocache=true' . htmlspecialchars( '" alt="This website is hosted Green - checked by thegreenwebfoundation.org">' ); ?></code></pre>
+	<img src="https://api.thegreenwebfoundation.org/greencheckimage/<?php echo esc_html( $green_check_result->url ); ?>?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">	
+	<pre><code><?php echo htmlspecialchars( '<img src="https://api.thegreenwebfoundation.org/greencheckimage/') . esc_html( $green_check_result->url ) . '?nocache=true' . htmlspecialchars( '" alt="This website is hosted Green - checked by thegreenwebfoundation.org">' ); ?></code></pre>
 </div>
 
 <?php require_once PDEV_DIR . 'templates/checker/checker-social.php'; ?>

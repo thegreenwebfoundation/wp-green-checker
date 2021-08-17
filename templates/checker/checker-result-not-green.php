@@ -7,7 +7,7 @@
 
 ?>
 
-<h1>Result of the green web check &mdash; <?php echo$green_check_result->url; ?> is not hosted <span class="tgw-green">green</span>!</h1>
+<h1>Result of the green web check &mdash; <?php echo esc_html( $green_check_result->url ); ?> is not hosted <span class="tgw-green">green</span>!</h1>
 
 <div class="tgwf-result">	
 
@@ -28,11 +28,11 @@
 
 <div class="">
 	<strong>Save this image or use the code below to implement this badge on your website.</strong></p>
-	<img src="https://api.thegreenwebfoundation.org/greencheckimage/<?php echo$green_check_result->url; ?>" alt="This website is hosted grey - checked by thegreenwebfoundation.org">
-	
-	<pre><?php echo htmlspecialchars('<img src="https://api.thegreenwebfoundation.org/greencheckimage/') .$green_check_result->url . htmlspecialchars('" alt="This website is hosted Green - checked by thegreenwebfoundation.org">');?></pre>
+	<img src="https://api.thegreenwebfoundation.org/greencheckimage/<?php echo esc_html( $green_check_result->url ); ?>" alt="This website is hosted grey - checked by thegreenwebfoundation.org">
 
-	<?php $excerpt =$green_check_result->url . ' is not hosted green.'; ?>
+	<pre><?php echo htmlspecialchars('<img src="https://api.thegreenwebfoundation.org/greencheckimage/') . esc_html( $green_check_result->url ) . htmlspecialchars('" alt="This website is hosted Green - checked by thegreenwebfoundation.org">');?></pre>
+
+	<?php $excerpt = esc_html( $green_check_result->url ) . ' is not hosted green.'; ?>
 	<span>Maybe you want to share this result with the hosting company? This creates leverage for your call to become green!<br></span>
 </div>
 
