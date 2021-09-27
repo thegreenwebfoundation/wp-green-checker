@@ -107,12 +107,10 @@
 							} else { 
 								template += "<tr><th>Partner</th><td>" + data.partner + "</td></tr>";
 							} 
-							template += "<tr><th>Active in</th><td>" + data.countrydomain + "</td></tr><tr><tr><th>Certificate</th>";
-							if(data.certurl == null) { 
-								template += "<td>Certificate Unknown</td>";
-							} else { 
-								template += "<td><table><tr><td> " + data.valid_from + " - </td><td> " + data.valid_to + " </td><td><a href='" + data.certurl + "' target=\"_blank\">Show Certificate</a></td></tr></table></td>";
-							} 
+							template += "<tr><th>Active in</th><td>" + data.countrydomain + "</td></tr>"
+
+
+
 							template += "</tr><tr><th>Datacenters in use</th><td>";
 							if (data.datacenters.length == 0) { 
 								template += "Unknown ";
@@ -123,40 +121,30 @@
 							template += "</td></tr></table></div>";
 						
 							if (data.datacenters.length > 0) { 
-								template += "<table class='table'><thead><tr><th>Name</th><th>City</th><th>Country</th><th>PUE</th><th>Green Energy Certificates</th></tr></thead><tbody>";
+								template += "<table class='table'><thead><tr><th>Name</th><th>City</th><th>Country</th><th>PUE</th></tr></thead><tbody>";
 								$.each(data.datacenters, function( index, dc ){
 									template += "<tr><td><a href='" + dc.website + "' target=\"_blank\">" + dc.naam +"</a></td>";
 									template += "<td>";
-									if(dc.city) { 
+									if(dc.city) {
 										template += dc.city;
-									}else{ 
+									}else{
 										template += "Unknown";
-									} 
+									}
 									template += "</td>";
 									template += "<td>";
-									if(dc.country) { 
+									if(dc.country) {
 										template += dc.country;
 									}else{ 
 										template += "Unknown";
-									} 
+									}
 									template += "</td>";
 									template += "<td>";
-									if(dc.pue) { 
+									if(dc.pue) {
 										template += dc.pue;
-									}else{ 
+									}else{
 										template += "Unknown";
-									} 
+									}
 									template += "</td>";
-						
-									if(dc.certificates.length == 0) { 
-										template += "<td>Unknown</td>";
-									} else { 
-										template += "<td><table>";
-										$.each(dc.certificates, function (indexcert, cert) {
-											template += "<tr><td>" + cert.cert_valid_from + "</td><td>" + cert.cert_valid_to + "</td><td><a href='" + cert.cert_url +"' target=\"_blank\">Certificate</a></td></tr>";
-										}); 
-										template += "</table></td>"
-									} 
 									template += "</tr>";
 								});
 								template += "</tbody></table>";
