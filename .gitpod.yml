@@ -32,7 +32,7 @@ tasks:
       --path="/workspace/wordpress/"
 
   - name: wp server
-    init: |
+    command: |
       gp await-port 3306 && wp server --host=0.0.0.0 --docroot=/workspace/wordpress
 
   - name: mailhog # start MailHog (SMTP testing tool) 
