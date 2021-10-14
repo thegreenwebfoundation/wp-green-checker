@@ -23,7 +23,7 @@ RUN go install github.com/mailhog/MailHog@latest && \
     cp $GOPATH/bin/MailHog /usr/local/bin/mailhog && \
     cp $GOPATH/bin/mhsendmail /usr/local/bin/mhsendmail && \
     ln $GOPATH/bin/mhsendmail /usr/sbin/sendmail && \
-    ln $GOPATH/bin/mhsendmail /usr/bin/mail &&\
+    ln $GOPATH/bin/mhsendmail /usr/bin/mail
 
 ### WP-CLI ###
 USER root
