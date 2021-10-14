@@ -29,3 +29,10 @@ This can be presented as a map, or a list of hosts by country.
 
 
 
+## Development
+
+
+[Gitpod](https://www.gitpod.io) is a ready-to-code dev environment with a single click. Follow the link below to work on this plugin in your browser
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thegreenwebfoundation/wp-green-checker)
+
