@@ -20,7 +20,7 @@ tasks:
       wp core download --path=/workspace/wordpress/
       wget -q https://raw.githubusercontent.com/thegreenwebfoundation/gitpod-wordpress/main/conf/wp-config.php -O /workspace/wordpress/wp-config.php
       wget -q https://raw.githubusercontent.com/thegreenwebfoundation/gitpod-wordpress/main/conf/wp-cli.yml -O wp-cli.yml
-      ln -s /workspace/gitpod-wordpress/ /workspace/wordpress/wp-content/plugins/gitpod-wordpress
+      ln -s /workspace/wp-green-checker /workspace/wordpress/wp-content/plugins/wp-green-checker
       gp await-port 3306 && mysqladmin create wordpress  
     command: >
       gp await-port 3306 && wp core install 
