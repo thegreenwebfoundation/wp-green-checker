@@ -16,29 +16,18 @@ ports:
 tasks:
   - name: set up wordpress file structure
     init: |
-      mkdir -p /workspace/wordpress/
-      wp core download --path=/workspace/wordpress/
-      wget -q https://raw.githubusercontent.com/thegreenwebfoundation/gitpod-wordpress/main/conf/wp-config.php -O /workspace/wordpress/wp-config.php
-      wget -q https://raw.githubusercontent.com/thegreenwebfoundation/gitpod-wordpress/main/conf/wp-cli.yml -O wp-cli.yml
-      ln -s /workspace/wp-green-checker /workspace/wordpress/wp-content/plugins/wp-green-checker
-      gp await-port 3306 && mysqladmin create wordpress  
+      bash ./gitpod.setup.sh init 
     command: >
-      wp core install 
-      --url="$(gp url 8080 | sed -e s/https:\\/\\/// | sed -e s/\\///)"
-      --title="WordPress" 
-      --admin_user="admin" 
-      --admin_password="password" 
-      --admin_email="admin@gitpod.test" 
-      --path="/workspace/wordpress/"
+      gp await-port 3306
       &&
-      wp post create --post_type=page --post_title=green-web-check --post_status=public
+      bash ./gitpod.setup.sh command
       &&
       gp sync-done wp-install
 
   - name: wp server
     command: |
       sync-await wp-install
-      wp server --host=0.0.0.0 --docroot=/workspace/wordpress
+      wp server --host=0.0.0.0
 
   - name: mailhog # start MailHog (SMTP testing tool) 
     command: mailhog -api-bind-addr 127.0.0.1:8025 -ui-bind-addr 127.0.0.1:8025 -smtp-bind-addr 127.0.0.1:1025
