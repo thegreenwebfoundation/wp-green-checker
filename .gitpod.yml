@@ -31,6 +31,8 @@ tasks:
       --admin_email="admin@gitpod.test" 
       --path="/workspace/wordpress/"
       &&
+      wp post create --post_type=page --post_title=green-web-check --post_status=public
+      &&
       gp sync-done wp-install
 
   - name: wp server
