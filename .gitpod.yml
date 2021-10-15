@@ -23,17 +23,20 @@ tasks:
       ln -s /workspace/wp-green-checker /workspace/wordpress/wp-content/plugins/wp-green-checker
       gp await-port 3306 && mysqladmin create wordpress  
     command: >
-      gp await-port 3306 && wp core install 
+      wp core install 
       --url="$(gp url 8080 | sed -e s/https:\\/\\/// | sed -e s/\\///)"
       --title="WordPress" 
       --admin_user="admin" 
       --admin_password="password" 
       --admin_email="admin@gitpod.test" 
       --path="/workspace/wordpress/"
+      &&
+      gp sync-done wp-install
 
   - name: wp server
     command: |
-      gp await-port 3306 && wp server --host=0.0.0.0 --docroot=/workspace/wordpress
+      sync-await wp-install
+      wp server --host=0.0.0.0 --docroot=/workspace/wordpress
 
   - name: mailhog # start MailHog (SMTP testing tool) 
     command: mailhog -api-bind-addr 127.0.0.1:8025 -ui-bind-addr 127.0.0.1:8025 -smtp-bind-addr 127.0.0.1:1025
