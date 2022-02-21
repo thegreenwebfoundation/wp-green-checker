@@ -2,7 +2,6 @@
 
 .tgwf-search-form__wrapper {
 	min-height: 60vh;
-	max-width: 800px;
 	margin: auto;
 	padding: 2rem 0;
 	display: flex;
@@ -16,6 +15,9 @@
 }
 .tgwf-search-form > h2 {
 	margin-top: 0;
+}
+.tgwf-search-form > p {
+	max-width: 800px;
 }
 .tgwf-search-form form {
 	display: flex;
