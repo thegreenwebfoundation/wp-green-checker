@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Green Checker
  * Description: The Green Web Foundation's service to check if a website is hosted green or not.
- * Version: 0.1
+ * Version: 0.2
  * Author: Hannah Smith
  * License: GPL v2 or laster
  * Text Domain: tgwfgreenchecker
