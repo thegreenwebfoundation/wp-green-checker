@@ -15,7 +15,7 @@
 
 		<?php // Form posts results back into the /green-web-check page URL, which runs tgwf_run_site_check(). ?>
 		<form action="<?php echo esc_url( get_bloginfo( 'url' ) ) . '/green-web-check'; ?>" method="GET">
-			<input name="url" class="form-control" type="text" placeholder="http://www.yourwebsite.com">
+			<input name="url" class="form-control" type="text" placeholder="https://www.yourwebsite.com">
 			<button type="submit" class="tgwf-search-form__button">Check&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></button>
 		</form>
 	</div>
