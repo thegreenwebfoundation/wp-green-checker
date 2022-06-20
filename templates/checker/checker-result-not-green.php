@@ -21,7 +21,7 @@
 		<div>
 			<p>Unfortunately, this website is hosted grey or we are not sure about the greenness of the hoster.</p>
 			<p>For the check to work, (technical) information about green hosters worldwide is needed. This information is stored in our <a href="https://www.thegreenwebfoundation.org/green-web-datasets/">Green Web database</a>.</p>
-			<p>Do you think this information is incorrect? Read our page <a href="https://www.thegreenwebfoundation.org/support/why-does-my-website-show-up-as-grey-in-the-green-web-checker/">Why does my website show up as grey in the Green Web Checker</a> for more information.</p>
+			<p>Do you think this information is incorrect? Read our guide <a href="https://www.thegreenwebfoundation.org/support/why-does-my-website-show-up-as-grey-in-the-green-web-checker/">Why does my website show up as grey in the Green Web Checker</a> for an explaination and next steps.</p>
 		</div>
 	</div>
 </div>
