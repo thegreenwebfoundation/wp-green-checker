@@ -27,10 +27,10 @@
 
 <div class="">
 
-	<div class="wp-block-group alignfull has-nv-site-bg-color has-neve-link-color-background-color has-text-color has-background">
+	<div class="wp-block-group alignfull has-neve-text-color-color has-nv-light-bg-background-color has-text-color has-background">
 		<div class="wp-block-group__inner-container" style="max-width: 789px;">
 
-			<h2>Want to green this result?</h2>
+			<h2 class="has-nv-c-2-color has-text-color">Want to green this result?</h2>
 			<p>Here's how you can turn that frown upside down...</p>
 
 			<div class="wp-block-columns" style="gap: 2rem;">
@@ -40,7 +40,7 @@
 				
 					<div class="wp-block-buttons">
 						<div class="wp-block-button">
-							<a class="wp-block-button__link has-neve-text-color-color has-nv-site-bg-background-color has-text-color has-background" href="https://www.thegreenwebfoundation.org/sample-emails/">View sample emails</a>
+							<a class="wp-block-button__link" href="https://www.thegreenwebfoundation.org/sample-emails/">View sample emails</a>
 						</div>
 					</div>
 
@@ -52,7 +52,7 @@
 	
 					<div class="wp-block-buttons">
 						<div class="wp-block-button">
-							<a class="wp-block-button__link has-neve-text-color-color has-nv-site-bg-background-color has-text-color has-background" href="https://www.thegreenwebfoundation.org/support/why-does-my-website-show-up-as-grey-in-the-green-web-checker/">Read guide</a>
+							<a class="wp-block-button__link" href="https://www.thegreenwebfoundation.org/support/why-does-my-website-show-up-as-grey-in-the-green-web-checker/">Read guide</a>
 						</div>
 					</div>
 				

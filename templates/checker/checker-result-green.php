@@ -57,7 +57,7 @@
 
 <div class="">
 
-	<div class="wp-block-group alignfull has-neve-text-color-color has-nv-light-bg-background-color has-text-color has-background">
+	<div class="wp-block-group alignfull has-nv-site-bg-color has-neve-link-color-background-color has-text-color has-background">
 		<div class="wp-block-group__inner-container" style="max-width: 789px;">
 
 			<h2>Is this your website?</h2>
