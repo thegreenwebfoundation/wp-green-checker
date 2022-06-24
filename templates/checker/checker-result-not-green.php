@@ -7,7 +7,7 @@
 
 ?>
 
-<h1>Result of the green web check &mdash; <?php echo esc_html( $green_check_result->url ); ?> is not hosted <span class="tgw-green">green</span>!</h1>
+<h1>Result of the green web check &mdash; <?php echo esc_html( $green_check_result->url ); ?> is not hosted <span class="tgw-green">green</span></h1>
 
 <div class="tgwf-result">	
 
@@ -16,26 +16,51 @@
 	</div>
 
 	<div class="">
-		<h3>Show the world this website is not green.</h3>
+		<h3>Oh dear!</h3>
 		
 		<div>
 			<p>Unfortunately, this website is hosted grey or we are not sure about the greenness of the hoster.</p>
 			<p>For the check to work, (technical) information about green hosters worldwide is needed. This information is stored in our <a href="https://www.thegreenwebfoundation.org/green-web-datasets/">Green Web database</a>.</p>
-			<p>Do you think this information is incorrect? Read our guide <a href="https://www.thegreenwebfoundation.org/support/why-does-my-website-show-up-as-grey-in-the-green-web-checker/">Why does my website show up as grey in the Green Web Checker</a> for an explanation and next steps.</p>
 		</div>
 	</div>
 </div>
 
 <div class="">
-	<strong>Save this image or use the code below to implement this badge on your website.</strong></p>
-	<img src="https://api.thegreenwebfoundation.org/greencheckimage/<?php echo esc_html( $green_check_result->url ); ?>" alt="This website is hosted grey - checked by thegreenwebfoundation.org">
 
-	<pre><?php echo htmlspecialchars('<img src="https://api.thegreenwebfoundation.org/greencheckimage/') . esc_html( $green_check_result->url ) . htmlspecialchars('" alt="This website is hosted Green - checked by thegreenwebfoundation.org">');?></pre>
+	<div class="wp-block-group alignfull has-nv-site-bg-color has-neve-link-color-background-color has-text-color has-background">
+		<div class="wp-block-group__inner-container" style="max-width: 789px;">
 
-	<?php $excerpt = esc_html( $green_check_result->url ) . ' is not hosted green.'; ?>
-	<span>Maybe you want to share this result with the hosting company? This creates leverage for your call to become green!<br></span>
+			<h2>Want to green this result?</h2>
+			<p>Here's how you can turn that frown upside down...</p>
+
+			<div class="wp-block-columns" style="gap: 2rem;">
+				<div class="wp-block-column" style="display: flex; flex-direction: column;">
+					<h3>For website owners: share this result with your hosting provider</h3>
+					<p style="flex-grow: 1;">Talk to your hosting provider and ask them to work with us so we can gather data and evidence about their renewable energy use. You can use our sample emails to help you raise the issue.</p>
+				
+					<div class="wp-block-buttons">
+						<div class="wp-block-button">
+							<a class="wp-block-button__link has-neve-text-color-color has-nv-site-bg-background-color has-text-color has-background" href="https://www.thegreenwebfoundation.org/sample-emails/">View sample emails</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="wp-block-column" style="display: flex; flex-direction: column;">
+					<h3>For hosting providers: submit data or corrections</h3>
+					<p style="flex-grow: 1;">If you think this data is incorrect and would like to query or update it, read our guide for an explanation and next steps.</p>
+	
+					<div class="wp-block-buttons">
+						<div class="wp-block-button">
+							<a class="wp-block-button__link has-neve-text-color-color has-nv-site-bg-background-color has-text-color has-background" href="https://www.thegreenwebfoundation.org/support/why-does-my-website-show-up-as-grey-in-the-green-web-checker/">Read guide</a>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
-
-<?php require_once PDEV_DIR . 'templates/checker/checker-social.php'; ?>
 
 <?php

@@ -39,7 +39,7 @@
 
 			<?php require_once PDEV_DIR . 'templates/checker/checker-check-again.php'; ?>	
 
-			<?php require_once PDEV_DIR . 'templates/checker/checker-app-blurb.php'; ?>
+			<?php require_once PDEV_DIR . 'templates/checker/checker-ctas.php'; ?>
 
 			<?php
 		} else {

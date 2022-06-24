@@ -56,13 +56,27 @@
 </div>
 
 <div class="">
-	<p><strong>Is this your website? Implement this badge on your website and show the world you are green.</strong></p>	
-	<p>Save this image or use the code below to implement this badge on your website.</p>
 
-	<img src="https://api.thegreenwebfoundation.org/greencheckimage/<?php echo esc_html( $green_check_result->url ); ?>?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">	
-	<pre><code><?php echo htmlspecialchars( '<img src="https://api.thegreenwebfoundation.org/greencheckimage/') . esc_html( $green_check_result->url ) . '?nocache=true' . htmlspecialchars( '" alt="This website is hosted Green - checked by thegreenwebfoundation.org">' ); ?></code></pre>
+	<div class="wp-block-group alignfull has-neve-text-color-color has-nv-light-bg-background-color has-text-color has-background">
+		<div class="wp-block-group__inner-container" style="max-width: 789px;">
+
+			<h2>Is this your website?</h2>
+			<p>Save this image or use the code to display this badge on your website, and show the world you are green!</p>
+
+			<div class="wp-block-columns">
+				<div class="wp-block-column">
+					<h3>Image</h3>
+					<img src="https://api.thegreenwebfoundation.org/greencheckimage/<?php echo esc_html( $green_check_result->url ); ?>?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
+				</div>
+
+				<div class="wp-block-column">
+					<h3>Code</h3>
+					<pre><code><?php echo htmlspecialchars( '<img src="https://api.thegreenwebfoundation.org/greencheckimage/') . esc_html( $green_check_result->url ) . '?nocache=true' . htmlspecialchars( '" alt="This website is hosted Green - checked by thegreenwebfoundation.org">' ); ?></code></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
-
-<?php require_once PDEV_DIR . 'templates/checker/checker-social.php'; ?>
 
 <?php
