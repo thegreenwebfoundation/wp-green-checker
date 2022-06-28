@@ -32,7 +32,7 @@
 	
 					<div class="wp-block-buttons">
 						<div class="wp-block-button">
-							<a class="wp-block-button__link has-neve-text-color-color has-nv-site-bg-background-color has-text-color has-background" href="https://edf29f40.sibforms.com/serve/MUIEAJUBre4NhT6Tf8F7jI_o0rKDq7Fyt0PbggPCLxYFKB5HaHy3gh0OvNbc0-m7yRoYgcZJNZsV49rA3p6A9TXy74bH9gPSy8jy6aukti_pA-qjD5IRYTixq2bq-IvPr6Jw_MI4CFiQlqXwuplNJz9Ptkro4eVLmsOHE_PmqiMu4O93CNvTtHKlyDVKy7eWgZ5G9NbW8tcknQ7H">Sign up</a>
+							<a class="wp-block-button__link has-neve-text-color-color has-nv-site-bg-background-color has-text-color has-background" href="https://www.thegreenwebfoundation.org/newsletter/">Sign up</a>
 						</div>
 					</div>
 				
