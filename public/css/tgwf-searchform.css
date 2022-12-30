@@ -1,12 +1,8 @@
 /* Styles for the green web checker shortcode, which outputs the search form. */
 
 .tgwf-search-form__wrapper {
-	min-height: 60vh;
 	margin: auto;
 	padding: 2rem 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 .tgwf-search-form {
 	/* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
@@ -22,6 +18,7 @@
 .tgwf-search-form form {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 2rem;
 }
 .tgwf-search-form form > * {
 	height: 40px;
@@ -30,7 +27,10 @@
 	width: 100%;
 }
 .tgwf-search-form__button {
-	flex: 1 0 0;
+	flex: 1 0 auto;
+}
+.tgwf-search-form__button button {
+	width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -39,9 +39,22 @@
 		min-width: 300px;
 		width: auto;
 	}
-	.tgwf-search-form__button {
+	/* .tgwf-search-form__button {
 		flex: 0 0 0;
 		margin-left: 1rem;
 		min-width: 100px;
+	} */
+}
+
+@media screen and (min-width: 767px) {
+
+	.tgwf-search-form__wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 2rem;
+	}
+	.tgwf-search-form__wrapper > *:first-child {
+		flex: 1 0 auto;
 	}
 }
