@@ -23,6 +23,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2rem;
+	margin-top: 1rem;
+	padding-top: 2rem;
 }
 .tgwf-search-form form > * {
 	height: 40px;

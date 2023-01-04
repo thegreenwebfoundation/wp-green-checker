@@ -16,7 +16,7 @@
 	<div class="tgwf-search-form reading-width">
 		<h1>Is your website hosted green?</h1>
 
-		<p style="padding-bottom: 1rem;">One day the Internet will run entirely on renewable energy. The Green Web Foundation believes that day should be within reach, and develops tools to speed up the transition towards a green Internet.</p>
+		<p>One day the Internet will run entirely on renewable energy. The Green Web Foundation believes that day should be within reach, and develops tools to speed up the transition towards a green Internet.</p>
 
 		<?php // Form posts results back into the /green-web-check page URL, which runs tgwf_run_site_check(). ?>
 		<form action="<?php echo esc_url( get_bloginfo( 'url' ) ) . '/green-web-check'; ?>" method="GET">
