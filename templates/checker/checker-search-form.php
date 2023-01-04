@@ -10,10 +10,10 @@
 <div class="tgwf-search-form__wrapper">
 
 	<div class="tgwf-image">
-		<img width="200" height="200" src="<?php echo esc_url( URL_DIR ) . 'public/img/TGWF-recycle-green.svg'; ?>" alt="TGWF recycle green icon">
+		<img width="250" height="250" src="<?php echo esc_url( URL_DIR ) . 'public/img/TGWF-recycle-green.svg'; ?>" alt="TGWF recycle green icon">
 	</div>
 
-	<div class="tgwf-search-form">
+	<div class="tgwf-search-form reading-width">
 		<h1>Is your website hosted green?</h1>
 
 		<p style="padding-bottom: 1rem;">One day the Internet will run entirely on renewable energy. The Green Web Foundation believes that day should be within reach, and develops tools to speed up the transition towards a green Internet.</p>

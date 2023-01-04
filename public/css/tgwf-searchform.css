@@ -9,9 +9,13 @@
 	border-radius: 6px;
 	padding: 2rem 1rem; */
 }
+.tgwf-search-form > h1 {
+	font-size: 2.5em;
+}
 .tgwf-search-form > h2 {
 	margin-top: 0;
 }
+.reading-width,
 .tgwf-search-form > p {
 	max-width: 800px;
 }
