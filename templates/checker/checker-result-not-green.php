@@ -7,30 +7,44 @@
 
 ?>
 
-<h1>Result of the green web check &mdash; <?php echo esc_html( $green_check_result->url ); ?> is not hosted <span class="tgw-green">green</span></h1>
+<div class="tgwf-result__wrapper wp-block-cover alignfull">
 
-<div class="tgwf-result">	
+	<span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-white-to-orange-gradient-background"></span>
 
-	<div class="tgwf-result__summary">
-		<img class="tgwf-result__smiley" src="<?php echo URL_DIR . 'public/img/green-web-smiley-bad.svg' ?>" alt="Website hosted grey">
-	</div>
+	<div class="wp-block-cover__inner-container">
+		<div class="tgwf-result__page-title">
+			<h1>Result of Green Web Check</h1>
+		</div>
 
-	<div class="">
-		<h3>Oh dear!</h3>
-		
-		<div>
-			<p>Unfortunately, this website is hosted grey or we are not sure about the greenness of the hoster.</p>
-			<p>For the check to work, (technical) information about green hosters worldwide is needed. This information is stored in our <a href="https://www.thegreenwebfoundation.org/green-web-datasets/">Green Web database</a>.</p>
+		<div class="tgwf-result">	
+
+			<div class="tgwf-result__image">
+				<img class="tgwf-result__smiley" src="<?php echo URL_DIR . 'public/img/GWF-not-hosted-green-icon.svg' ?>" alt="Website hosted grey">
+			</div>
+
+			<div class="tgwf-result__text">
+
+				<p class="tgwf-result__result">
+					<span class="tgwf-result__text--feedback">Oh dear!</span>
+					<span class="tgwf-result__text--url"><?php echo esc_html( $green_check_result->url ); ?></span>
+					<span class="tgwf-result__text--hosting-outcome">is not hosted green.</span>
+				</p>
+
+				<div>
+					<p>Unfortunately, this website is hosted grey or we are not sure about the greenness of the hoster.</p>
+					<p>For the check to work, (technical) information about green hosters worldwide is needed. This information is stored in our <a href="https://www.thegreenwebfoundation.org/green-web-datasets/">Green Web Dataset</a>.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
 <div class="">
 
-	<div class="wp-block-group alignfull has-neve-text-color-color has-nv-light-bg-background-color has-text-color has-background">
+	<div class="wp-block-group alignfull">
 		<div class="wp-block-group__inner-container" style="max-width: 789px;">
 
-			<h2 class="has-nv-c-2-color has-text-color">Want to green this result?</h2>
+			<h2 class="">Want to green this result?</h2>
 			<p>Here's how you can turn that frown upside down...</p>
 
 			<div class="wp-block-columns" style="gap: 2rem;">

@@ -6,14 +6,18 @@
 
 
 /* 1. BASE LAYOUT                     */
-.tgwf-content__wrapper > div {
-	margin: 2rem 0;
+.tgwf-content__wrapper > div:not(.wp-block-cover),
+.tgwf-result__wrapper .wp-block-cover__inner-container {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 767px) {
 
-	.tgwf-content__wrapper > div {
-		margin: 4rem 0;
+	.tgwf-content__wrapper > div:not(.wp-block-cover),
+	.tgwf-result__wrapper .wp-block-cover__inner-container {
+		margin-top: 4rem;
+		margin-bottom: 4rem;
 	}
 	.tgwf-content__wrapper > div:last-child {
 		margin-bottom: 0;
@@ -33,12 +37,13 @@
 
 	.tgwf-result {
 		display: flex;
+		margin-top: 2rem;
 	}
 	.tgwf-result > div:first-child {
-		width: 35%;
+		width: 25%;
 	}
 	.tgwf-result > div:nth-child(2) {
-		width: 65%;
+		width: 75%;
 	}
 	.tgwf-result__summary {
 		padding-right: 3rem;
