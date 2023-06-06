@@ -12,15 +12,24 @@
 	margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 576px) {
+
+	.tgwf-content__wrapper > div:not(.wp-block-cover),
+	.tgwf-result__wrapper .wp-block-cover__inner-container {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+	.tgwf-content__wrapper > div:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 960px) {
 
 	.tgwf-content__wrapper > div:not(.wp-block-cover),
 	.tgwf-result__wrapper .wp-block-cover__inner-container {
 		margin-top: 4rem;
 		margin-bottom: 4rem;
-	}
-	.tgwf-content__wrapper > div:last-child {
-		margin-bottom: 0;
 	}
 }
 
@@ -29,8 +38,8 @@
 .tgwf-result {
 	margin-top: 1rem;
 }
-.tgwf-result__smiley {
-	width: 200px;
+.tgwf-result__icon {
+	height: 100%;
 }
 
 @media screen and (min-width: 767px) {
@@ -40,14 +49,16 @@
 		margin-top: 2rem;
 	}
 	.tgwf-result > div:first-child {
-		width: 25%;
+		width: min(25%, 250px);
 	}
 	.tgwf-result > div:nth-child(2) {
-		width: 75%;
+		width: 100%;
+		margin-left: 4rem;
 	}
 	.tgwf-result__summary {
 		padding-right: 3rem;
 	}
+	
 }
 
 

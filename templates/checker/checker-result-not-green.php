@@ -16,10 +16,9 @@
 			<h1>Result of Green Web Check</h1>
 		</div>
 
-		<div class="tgwf-result">	
-
+		<div class="tgwf-result tgwf-result-overview">	
 			<div class="tgwf-result__image">
-				<img class="tgwf-result__smiley" src="<?php echo URL_DIR . 'public/img/GWF-not-hosted-green-icon.svg' ?>" alt="Website hosted grey">
+				<img class="tgwf-result__icon" src="<?php echo URL_DIR . 'public/img/GWF-not-hosted-green-icon.svg' ?>" alt="Website hosted grey">
 			</div>
 
 			<div class="tgwf-result__text">
@@ -27,13 +26,18 @@
 				<p class="tgwf-result__result">
 					<span class="tgwf-result__text--feedback">Oh dear!</span>
 					<span class="tgwf-result__text--url"><?php echo esc_html( $green_check_result->url ); ?></span>
-					<span class="tgwf-result__text--hosting-outcome">is not hosted green.</span>
+					<span class="tgwf-result__text--hosting-outcome">is not hosted green</span>
 				</p>
+			</div>
+		</div>
 
-				<div>
-					<p>Unfortunately, this website is hosted grey or we are not sure about the greenness of the hoster.</p>
-					<p>For the check to work, (technical) information about green hosters worldwide is needed. This information is stored in our <a href="https://www.thegreenwebfoundation.org/green-web-datasets/">Green Web Dataset</a>.</p>
-				</div>
+		<div class="tgwf-result tgwf-result-details">
+			<div class="tgwf-result__empty">	
+			</div>
+
+			<div class="tgwf-result__hosted-by">
+				<p>Unfortunately, this website is hosted grey or we are not sure about the greenness of the hoster.</p>
+				<p>For the check to work, (technical) information about green hosters worldwide is needed. This information is stored in our <a href="https://www.thegreenwebfoundation.org/green-web-datasets/">Green Web Dataset</a>.</p>
 			</div>
 		</div>
 	</div>

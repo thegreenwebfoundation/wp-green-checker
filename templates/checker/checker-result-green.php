@@ -16,10 +16,9 @@
 			<h1>Result of Green Web Check</h1>
 		</div>
 
-		<div class="tgwf-result">
-
+		<div class="tgwf-result tgwf-result-overview">
 			<div class="tgwf-result__image">
-				<img class="tgwf-result__smiley" src="<?php echo esc_url( URL_DIR ) . 'public/img/TGWF-recycle-green.svg'; ?>" alt="Website hosted green">
+				<img class="tgwf-result__icon" src="<?php echo esc_url( URL_DIR ) . 'public/img/TGWF-recycle-green.svg'; ?>" alt="Website hosted green">
 			</div>
 
 			<div class="tgwf-result__text">
@@ -27,16 +26,23 @@
 				<p class="tgwf-result__result">
 					<span class="tgwf-result__text--feedback">Congratulations!</span>
 					<span class="tgwf-result__text--url"><?php echo esc_html( $green_check_result->url ); ?></span>
-					<span class="tgwf-result__text--hosting-outcome">is hosted green.</span>
+					<span class="tgwf-result__text--hosting-outcome">is hosted green</span>
 				</p>
+			</div>
+		</div>
+
+		<div class="tgwf-result tgwf-result-details">
+			<div class="tgwf-result__empty">	
+			</div>
+
+			<div class="tgwf-result__hosted-by">
 
 				<?php
 				if ( isset( $green_check_result->hosted_by ) ) :
 					?>
 
-					<div class="tgwf-result__hosted-by">
-						<p>Hosted by: <a href="/directory/#<?php echo esc_html( $green_check_result->hosted_by_id ); ?>"><?php echo esc_html( $green_check_result->hosted_by ); ?></a></p>																					
-					</div>
+					<p style="font-weight: bold;">Hosted by: <a href="/directory/#<?php echo esc_html( $green_check_result->hosted_by_id ); ?>"><?php echo esc_html( $green_check_result->hosted_by ); ?></a></p>																					
+					
 				<?php
 				endif;
 				?>
@@ -45,16 +51,15 @@
 
 				<?php
 				if ( isset( $green_check_result->hosted_by ) ) :
-					?>
-					<div class="tgwf-result__supporting-evidence">
-						<?php
-						if ( isset( $green_check_result->supporting_documents ) ) :
-							$docs = $green_check_result->supporting_documents;
+	
+					if ( isset( $green_check_result->supporting_documents ) ) :
+						$docs = $green_check_result->supporting_documents;
 
-							if ( ! empty( $docs ) ) :
-								?>
-								<p>Supporting evidence for the hoster's claims</p>
-								<ul>
+						if ( ! empty( $docs ) ) :
+							?>
+							<div class="tgwf-result__supporting-evidence">
+								<p>Supporting evidence for this hoster's claims</p>
+								<ul style="margin: 0;">
 									<?php
 									foreach ( $docs as $doc ) :
 										?>
@@ -63,42 +68,40 @@
 									endforeach;
 									?>
 								</ul>
-								<?php
-							endif;
+							</div>
+							<?php
 						endif;
-						?>
+					endif;
+					?>
 
 					</div>
-
 					<?php
 				endif;
 				?>
 			</div>	
 		</div>
-	</div>
 </div>
 
-<div class="">
 
-	<div class="wp-block-group alignfull">
-		<div class="wp-block-group__inner-container" style="max-width: 789px;">
+<div class="wp-block-group">
+	<div class="wp-block-group__inner-container" style="max-width: 789px; margin: auto;">
 
-			<h2>Is this your website?</h2>
-			<p>Save this image or use the code to display this badge on your website, and show the world you are green!</p>
+		<h2>Is this your website?</h2>
+		<p>Save this image or use the code to display this badge on your website, and show the world you are green!</p>
 
-			<div class="wp-block-columns">
-				<div class="wp-block-column">
-					<h3>Image</h3>
-					<img src="https://api.thegreenwebfoundation.org/greencheckimage/<?php echo esc_html( $green_check_result->url ); ?>?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
-				</div>
+		<div class="wp-block-columns" style="gap: 2rem;">
+			<div class="wp-block-column">
+				<h3>Image</h3>
+				<img src="https://api.thegreenwebfoundation.org/greencheckimage/<?php echo esc_html( $green_check_result->url ); ?>?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
+			</div>
 
-				<div class="wp-block-column">
-					<h3>Code</h3>
-					<pre><code><?php echo htmlspecialchars( '<img src="https://api.thegreenwebfoundation.org/greencheckimage/') . esc_html( $green_check_result->url ) . '?nocache=true' . htmlspecialchars( '" alt="This website is hosted Green - checked by thegreenwebfoundation.org">' ); ?></code></pre>
-				</div>
+			<div class="wp-block-column">
+				<h3>Code</h3>
+				<pre><code><?php echo htmlspecialchars( '<img src="https://api.thegreenwebfoundation.org/greencheckimage/') . esc_html( $green_check_result->url ) . '?nocache=true' . htmlspecialchars( '" alt="This website is hosted Green - checked by thegreenwebfoundation.org">' ); ?></code></pre>
 			</div>
 		</div>
 	</div>
+</div>
 
 </div>
 
