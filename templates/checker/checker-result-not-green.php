@@ -18,7 +18,7 @@
 
 		<div class="tgwf-result tgwf-result-overview">	
 			<div class="tgwf-result__image">
-				<img class="tgwf-result__icon" src="<?php echo URL_DIR . 'public/img/GWF-not-hosted-green-icon.svg' ?>" alt="Website hosted grey">
+				<img class="tgwf-result__icon" src="<?php echo URL_DIR . 'public/img/gwf-brand-icons/gwf-not-hosted-green-icon.svg' ?>" alt="Website hosted grey">
 			</div>
 
 			<div class="tgwf-result__text">

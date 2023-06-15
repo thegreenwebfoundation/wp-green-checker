@@ -4,6 +4,14 @@
 	margin: auto;
 	padding: 2rem 0;
 }
+
+.tgwf-search-form__wrapper .tgwf-search-form  .wp-block-button__link {
+	background: black;
+	border-color: black;
+	color: white;
+}
+
+
 .tgwf-search-form {
 	/* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 6px;
@@ -25,9 +33,6 @@
 	gap: 2rem;
 	margin-top: 1rem;
 	padding-top: 2rem;
-}
-.tgwf-search-form form > * {
-	height: 40px;
 }
 .tgwf-search-form form input {
 	width: 100%;

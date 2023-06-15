@@ -18,7 +18,7 @@
 
 		<div class="tgwf-result tgwf-result-overview">
 			<div class="tgwf-result__image">
-				<img class="tgwf-result__icon" src="<?php echo esc_url( URL_DIR ) . 'public/img/TGWF-recycle-green.svg'; ?>" alt="Website hosted green">
+				<img class="tgwf-result__icon" src="<?php echo esc_url( URL_DIR ) . 'public/img/gwf-brand-icons/gwf-recycle-green.svg'; ?>" alt="Website hosted green">
 			</div>
 
 			<div class="tgwf-result__text">
@@ -103,6 +103,5 @@
 	</div>
 </div>
 
-</div>
 
 <?php
