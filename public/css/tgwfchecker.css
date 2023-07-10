@@ -2,7 +2,8 @@
 
 /* 1. BASE LAYOUT                     */
 /* 2. RESULT                          */
-/* 3. SOCIAL SHARE                    */
+/* 3. CHECK AGAIN                     */
+/* 4. SOCIAL SHARE                    */
 
 
 /* 1. BASE LAYOUT                     */
@@ -62,7 +63,30 @@
 }
 
 
-/* 3. SOCIAL SHARE                    */
+/* 3. CHECK AGAIN                     */
+
+.gwf-check-again h2 {
+	padding-bottom: 2rem;
+	border-bottom: 2px solid black;
+	position: relative;
+	padding-left: 130px;
+}
+
+.gwf-check-again h2::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100px;
+	display: block;
+	content: '';
+	background-image: url( '../img/gwf-brand-icons/gwf-green-tilted-arrow.svg' );
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+/* 4. SOCIAL SHARE                    */
 
 #social a {
     display: inline-block;
