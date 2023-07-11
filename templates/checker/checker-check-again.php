@@ -7,13 +7,17 @@
 
 ?>
 
-<div class="tgwf-search-form tgwf-search-form__check-again">
-	<h2><?php _e( 'Perform another green check','tgwf' ); ?></h2>	
+<div class="wp-block-cover alignfull is-light gwf-check-again pattern__text-gradient-image">
+	
+	<div class="wp-block-cover__inner-container">
+		<div class="wp-block-group gwf-check-again__text">
+			<div class="wp-block-group__inner-container" style="margin-left: auto; margin-right: auto;">
+				<h2 class="has-neve-text-color-color has-text-color">Run another green check</h2>
 
-	<form action="<?php echo esc_url( get_bloginfo( 'url' ) ) . '/green-web-check'; ?>" method="GET">
-		<input name="url" class="form-control" type="text" placeholder="http://www.yourwebsite.com">
-		<button type="submit" class="tgwf-search-form__button">Check&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></button>
-	</form>
+				<?php require_once PDEV_DIR . 'templates/checker/checker-search-form.php'; ?>	
+			</div>
+		</div>
+	</div>
 </div>
 
 <?php

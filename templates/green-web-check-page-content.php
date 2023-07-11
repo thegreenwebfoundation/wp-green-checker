@@ -39,7 +39,7 @@
 
 			<?php require_once PDEV_DIR . 'templates/checker/checker-check-again.php'; ?>	
 
-			<?php require_once PDEV_DIR . 'templates/checker/checker-ctas.php'; ?>
+			<?php //require_once PDEV_DIR . 'templates/checker/checker-ctas.php'; ?>
 
 			<?php
 		} else {
@@ -53,7 +53,7 @@
 		}
 	} else {
 		// There is no search performed, show search bar for new search.
-		require_once PDEV_DIR . 'templates/checker/checker-search-form.php';
+		require_once PDEV_DIR . 'templates/checker/checker-search-form-wrapper.php';
 	}
 ?>
 

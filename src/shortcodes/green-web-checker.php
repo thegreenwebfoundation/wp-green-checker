@@ -21,6 +21,6 @@ function green_checker_search_form() {
 
 	// Use output buffering to prevent json errors in the editor.
 	ob_start();
-	require_once PDEV_DIR . 'templates/checker/checker-search-form.php';
+	require_once PDEV_DIR . 'templates/checker/checker-search-form-wrapper.php';
 	return ob_get_clean();
 }

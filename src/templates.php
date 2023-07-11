@@ -8,6 +8,7 @@
 
 add_filter( 'the_content', 'tgwf_green_web_check_page_content' );
 
+
 /**
  * Checks if we have a page called '/green-web-check'.
  * If we do, replace the page content with the green web check page content.
@@ -27,3 +28,14 @@ function tgwf_green_web_check_page_content( $content ) {
 
 	return $content;
 }
+
+
+add_filter( 'body_class', function( $classes ) {
+
+	// Check if we're inside the main loop in a single Post.
+	if ( is_page( 'green-web-check' ) && is_main_query() ) {
+		$classes = array_merge( $classes, array( 'green-web-check' ) );
+	}
+
+	return $classes;
+} );

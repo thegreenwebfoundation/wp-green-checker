@@ -2,21 +2,35 @@
 
 /* 1. BASE LAYOUT                     */
 /* 2. RESULT                          */
-/* 3. SOCIAL SHARE                    */
+/* 3. CHECK AGAIN                     */
+/* 4. SOCIAL SHARE                    */
 
 
 /* 1. BASE LAYOUT                     */
-.tgwf-content__wrapper > div {
-	margin: 2rem 0;
+.tgwf-content__wrapper > div:not(.wp-block-cover),
+.tgwf-result__wrapper .wp-block-cover__inner-container {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 576px) {
 
-	.tgwf-content__wrapper > div {
-		margin: 4rem 0;
+	.tgwf-content__wrapper > div:not(.wp-block-cover),
+	.tgwf-result__wrapper .wp-block-cover__inner-container {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
 	}
 	.tgwf-content__wrapper > div:last-child {
 		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 960px) {
+
+	.tgwf-content__wrapper > div:not(.wp-block-cover),
+	.tgwf-result__wrapper .wp-block-cover__inner-container {
+		margin-top: 4rem;
+		margin-bottom: 4rem;
 	}
 }
 
@@ -25,28 +39,54 @@
 .tgwf-result {
 	margin-top: 1rem;
 }
-.tgwf-result__smiley {
-	width: 200px;
+.tgwf-result__icon {
+	height: 100%;
 }
 
 @media screen and (min-width: 767px) {
 
 	.tgwf-result {
 		display: flex;
+		margin-top: 2rem;
 	}
 	.tgwf-result > div:first-child {
-		width: 35%;
+		width: min(25%, 250px);
 	}
 	.tgwf-result > div:nth-child(2) {
-		width: 65%;
+		width: 100%;
+		margin-left: 4rem;
 	}
 	.tgwf-result__summary {
 		padding-right: 3rem;
 	}
+	
 }
 
 
-/* 3. SOCIAL SHARE                    */
+/* 3. CHECK AGAIN                     */
+
+.gwf-check-again h2 {
+	padding-bottom: 2rem;
+	border-bottom: 2px solid black;
+	position: relative;
+	padding-left: 130px;
+}
+
+.gwf-check-again h2::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100px;
+	display: block;
+	content: '';
+	background-image: url( '../img/gwf-brand-icons/gwf-green-tilted-arrow.svg' );
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+/* 4. SOCIAL SHARE                    */
 
 #social a {
     display: inline-block;
