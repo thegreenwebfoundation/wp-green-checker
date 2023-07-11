@@ -51,10 +51,10 @@
 			<h2 class="">Want to green this result?</h2>
 			<p>Here's how you can turn that frown upside down...</p>
 
-			<div class="wp-block-columns" style="gap: 2rem;">
+			<div class="wp-block-columns" style="gap: 2rem; margin-top: 2rem;">
 				<div class="wp-block-column" style="display: flex; flex-direction: column;">
-					<h3>For website owners: share this result with your hosting provider</h3>
-					<p style="flex-grow: 1;">Talk to your hosting provider and ask them to work with us so we can gather data and evidence about their renewable energy use. You can use our sample emails to help you raise the issue.</p>
+					<h3>For website owners</h3>
+					<p style="flex-grow: 1;"><span style="font-weight: 700">Share this result with your hosting provider.</span> Talk to your hosting provider and ask them to work with us so we can gather data and evidence about their renewable energy use. You can use our sample emails to help you raise the issue.</p>
 				
 					<div class="wp-block-buttons">
 						<div class="wp-block-button">
@@ -65,8 +65,8 @@
 				</div>
 
 				<div class="wp-block-column" style="display: flex; flex-direction: column;">
-					<h3>For hosting providers: submit data or corrections</h3>
-					<p style="flex-grow: 1;">If you think this data is incorrect and would like to query or update it, read our guide for an explanation and next steps.</p>
+					<h3>For hosting providers</h3>
+					<p style="flex-grow: 1;"><span style="font-weight: 700;">Submit data or corrections.</span> If you think this data is incorrect and would like to query or update it, read our guide for an explanation and next steps.</p>
 	
 					<div class="wp-block-buttons">
 						<div class="wp-block-button">
