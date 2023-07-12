@@ -14,9 +14,9 @@
 	</div>
 
 	<div class="tgwf-search-form reading-width">
-		<h1>Is your website hosted green?</h1>
+		<h2>Does your website run on green energy?</h2>
 
-		<p>One day the Internet will run entirely on renewable energy. The Green Web Foundation believes that day should be within reach, and develops tools to speed up the transition towards a green Internet.</p>
+		<p>The internet is the world's largest coal-powered machine. Check if your website runs on green energy — and help make the internet fossil-free.</p>
 
 		<?php require_once PDEV_DIR . 'templates/checker/checker-search-form.php'; ?>	
 	</div>
