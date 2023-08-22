@@ -7,38 +7,44 @@
 
 ?>
 
-<div class="tgwf-app-cta wp-block-group alignfull has-nv-site-bg-color has-neve-link-hover-color-background-color has-text-color has-background">
-	<div class="wp-block-group__inner-container" style="max-width: 789px; margin-bottom: 0;">
+<div class="gwf-app-cta wp-block-group alignfull">
+	<div class="wp-block-group__inner-container" style="margin-bottom: 0;">
 
-		<h2>Keen to learn more about digital sustainability?</h2>
+		<h2 class="gwf-app-cta__title">Found our Green Web Check useful?</h2>
+		<p class="gwf-app-cta__intro">Help speed up the transition towards a greener internet by supporting the mission.</p>
 
-		<div class="wp-block-columns" style="gap: 2rem;">
-			<div class="wp-block-column" style="display: flex; flex-direction: column;">
-				<h3>Services</h3>
-				<p style="flex-grow: 1;">How we can help you if you’re looking to green digital services inside your organisation.</p>
-			
-				<div class="wp-block-buttons">
-					<div class="wp-block-button">
-						<a class="wp-block-button__link has-neve-text-color-color has-nv-site-bg-background-color has-text-color has-background" href="https://www.thegreenwebfoundation.org/services/">Our services</a>
-					</div>
-				</div>
+		<div class="gwf-app-cta__ctas wp-block-gwf__threecols-t-p-b">
+    
+			<h3 class="gwf__threecols-t-p-b__title gwf-iconbg-lightning--black">Support<br/>the mission</h3>
+			<p class="gwf__threecols-t-p-b__para">We are a non-profit working for the public benefit, with more funding we can have more impact.</p>
 
+			<div class="wp-block-button is-style-primary gwf__threecols-t-p-b__button mt-0">
+				<a class="wp-block-button__link" href="https://www.thegreenwebfoundation.org/donate">
+				How donating works
+				</a>
 			</div>
 
-			<div class="wp-block-column" style="display: flex; flex-direction: column;">
-				<h3>Newsletter</h3>
-				<p style="flex-grow: 1;">Timely and actionable news about greening the web and a sustainable digital transition.</p>
 
-				<div class="wp-block-buttons">
-					<div class="wp-block-button">
-						<a class="wp-block-button__link has-neve-text-color-color has-nv-site-bg-background-color has-text-color has-background" href="https://www.thegreenwebfoundation.org/newsletter/">Sign up</a>
-					</div>
-				</div>
-			
+			<h3 class="gwf__threecols-t-p-b__title gwf-iconbg-plant--black">Share your<br/>suggestions</h3>
+			<p class="gwf__threecols-t-p-b__para">We welcome your feedback and perspectives on how to make this Green Web Checker tool better.</p>
+
+			<div class="wp-block-button gwf__threecols-t-p-b__button mt-0">
+				<a class="wp-block-button__link" href="https://www.thegreenwebfoundation.org/support-form">
+				Send us a message
+				</a>
 			</div>
+
+			<h3 class="gwf__threecols-t-p-b__title gwf-iconbg-sunburst--black">Spread<br/>the word</h3>
+			<p class="gwf__threecols-t-p-b__para">When you use our open source work and cite us publically it helps us show our impact to funders.</p>
+
+			<div class="wp-block-button is-style-secondary gwf__threecols-t-p-b__button mt-0">
+				<a class="wp-block-button__link" href="https://www.thegreenwebfoundation.org/how-to-cite-our-work/">
+				How to cite our work
+				</a>
+			</div>
+
 		</div>
 	</div>
 </div>
-
 
 <?php
