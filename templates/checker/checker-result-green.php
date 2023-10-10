@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="tgwf-result__wrapper wp-block-cover alignfull">
+<div class="tgwf-result__wrapper tgwf-result-green wp-block-cover alignfull">
 
 	<span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-white-to-primary-gradient-background"></span>
 
@@ -24,7 +24,7 @@
 			<div class="tgwf-result__text">
 
 				<p class="tgwf-result__result">
-					<span class="tgwf-result__text--feedback">Congratulations!</span>
+					<span class="tgwf-result__text--feedback">Great news!</span>
 					<span class="tgwf-result__text--url"><?php echo esc_html( $green_check_result->url ); ?></span>
 					<span class="tgwf-result__text--hosting-outcome">is hosted green</span>
 				</p>
@@ -47,7 +47,8 @@
 				endif;
 				?>
 
-				<p>This hoster is using green energy / compensation for its services.</p>
+				<p>We've been able to find evidence in our <a href="https://www.thegreenwebfoundation.org/green-web-dataset/">Green Web Dataset</a> that this website runs on green electricity.</p>
+				<p class="mb-0"><a href="https://www.thegreenwebfoundation.org/support/why-does-green-hosting-matter/">Why does green hosting matter?</a>
 
 				<?php
 				if ( isset( $green_check_result->hosted_by ) ) :
@@ -83,8 +84,8 @@
 </div>
 
 
-<div class="wp-block-group">
-	<div class="wp-block-group__inner-container" style="max-width: 789px; margin: auto;">
+<div class="wp-block-group mt-0">
+	<div class="wp-block-group__inner-container">
 
 		<h2>Is this your website?</h2>
 		<p>Save this image or use the code to display this badge on your website, and show the world you are green!</p>

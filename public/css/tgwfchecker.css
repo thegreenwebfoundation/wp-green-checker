@@ -59,9 +59,26 @@
 	.tgwf-result__summary {
 		padding-right: 3rem;
 	}
-	
 }
 
+.tgwf-result-not-green .tgwf-result-overview {
+	background-color: #525252;
+	color: white;
+	padding: 2rem;
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+}
+.tgwf-result-not-green .tgwf-result-details {
+	background-color: #525252;
+	color: white;
+	margin-top: 0;
+	padding: 0 2rem 2rem;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+}
+.tgwf-result-not-green .tgwf-result__result {
+	border-color: white;
+}
 
 /* 3. CHECK AGAIN                     */
 

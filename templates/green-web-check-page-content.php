@@ -46,13 +46,23 @@
 			// No result.
 			?>
 
-				<h1><?php _e( 'Sorry, we have a problem', 'tgwf' ); ?></h1>
-				<p><?php _e( "The most likely cause of the problem is that we can't connect to the Green Web Dataset. 
-				It might be offline, or your web browser might be offline. Please try again.", 'tgwf' ); ?></p>
+			<div class="tgwf-result__wrapper wp-block-cover alignfull no-border-bottom">
 
+				<div class="wp-block-cover__inner-container">
+					<div class="tgwf-result__page-title">
+						<h1><?php _e( 'Sorry, we have a problem', 'tgwf' ); ?></h1>
+					</div>
+		
+					<div style="margin-top: 2rem;">
+						<p><?php _e( "The most likely cause of the problem is that we can't connect to the Green Web Dataset.", 'tgwf' ); ?></p>
+						<p><?php _e( "It might be offline, or your web browser might be offline. Please try again.", 'tgwf' ); ?></p>
+					</div>
 
-				<?php require_once PDEV_DIR . 'templates/checker/checker-check-again.php'; ?>
-				<?php require_once PDEV_DIR . 'templates/checker/checker-ctas.php'; ?>						
+				</div>
+			</div>
+
+			<?php require_once PDEV_DIR . 'templates/checker/checker-check-again.php'; ?>
+			<?php require_once PDEV_DIR . 'templates/checker/checker-ctas.php'; ?>						
 
 			<?php
 		}
