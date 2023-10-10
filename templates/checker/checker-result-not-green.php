@@ -44,8 +44,8 @@
 	</div>
 </div>
 
-<div class="wp-block-group alignfull mt-0">
-	<div class="wp-block-group__inner-container" style="max-width: 789px; padding-left: 0; padding-right: 0;">
+<div class="wp-block-group mt-0">
+	<div class="wp-block-group__inner-container">
 
 		<h2 class="">Want to turn this result green?</h2>
 		<p>Here's how you can turn that frown upside down...</p>

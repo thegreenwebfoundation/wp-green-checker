@@ -47,7 +47,7 @@
 				endif;
 				?>
 
-				<p>We have been able to find evidence in our <a href="https://www.thegreenwebfoundation.org/green-web-dataset/">Green Web Dataset</a> that this website runs on green electricity.</p>
+				<p>We've been able to find evidence in our <a href="https://www.thegreenwebfoundation.org/green-web-dataset/">Green Web Dataset</a> that this website runs on green electricity.</p>
 				<p class="mb-0"><a href="https://www.thegreenwebfoundation.org/support/why-does-green-hosting-matter/">Why does green hosting matter?</a>
 
 				<?php
@@ -84,8 +84,8 @@
 </div>
 
 
-<div class="wp-block-group">
-	<div class="wp-block-group__inner-container" style="max-width: 789px; margin: auto;">
+<div class="wp-block-group mt-0">
+	<div class="wp-block-group__inner-container">
 
 		<h2>Is this your website?</h2>
 		<p>Save this image or use the code to display this badge on your website, and show the world you are green!</p>
