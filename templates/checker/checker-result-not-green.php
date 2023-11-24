@@ -11,18 +11,13 @@
 
 	<span aria-hidden="true" class="wp-block-cover__background"></span>
 
-	<div class="wp-block-cover__inner-container">
-		<div class="tgwf-result__page-title">
-			<h1>Result of Green Web Check</h1>
-		</div>
+	<?php require_once PDEV_DIR . 'templates/checker/checker-result-header.php'; ?>
 
-		<div class="tgwf-result tgwf-result-overview">	
 			<div class="tgwf-result__image">
 				<img class="tgwf-result__icon" src="<?php echo URL_DIR . 'public/img/gwf-brand-icons/gwf-not-hosted-green-icon.svg' ?>" alt="Website hosted grey">
 			</div>
 
-			<div class="tgwf-result__text">
-
+			<div class="tgwf-result__text" style="margin-top: 1rem;">
 				<p class="tgwf-result__result">
 					<span class="tgwf-result__text--feedback">With regret</span>
 					<span class="tgwf-result__text--hosting-outcome">No evidence found for</span>
@@ -36,9 +31,12 @@
 			</div>
 
 			<div class="tgwf-result__hosted-by has-background-gradient has-white-to-grey-gradient-background">
-				<p>Unfortunately, we can't find any evidence in our <a style="color: white;" href="https://www.thegreenwebfoundation.org/green-web-dataset/">Green Web Dataset</a> that this website runs on green electricity.</p>
+				<p>Unfortunately, we can't find any evidence in our <a style="color: white;" href="https://www.thegreenwebfoundation.org/green-web-dataset/">Green Web Dataset</a> that this website runs on green energy.</p>
 				<p>For a check to return a green result, we need evidence to demonstrate what steps are being taken to avoid, reduce or offset the emissions caused by the digital infrastructure used.</p>
-				<p class="mb-0"><a style="color: white;" href="https://www.thegreenwebfoundation.org/support/why-does-my-website-show-up-as-grey-in-the-green-web-checker/">Why does my website show up as grey in the Green Web Checker?</a>
+				<p><a style="color: white;" href="https://www.thegreenwebfoundation.org/support/why-does-my-website-show-up-as-grey-in-the-green-web-checker/">Why does my website show up as grey in the Green Web Checker?</a>
+			
+				<p class="mb-0" style="text-align: right;">Our take on <a style="color: white;" href="https://www.thegreenwebfoundation.org/support/why-does-green-hosting-matter/">why green hosting matters.</a></p>
+
 			</div>
 		</div>
 	</div>
@@ -48,7 +46,7 @@
 	<div class="wp-block-group__inner-container">
 
 		<h2 class="">Want to turn this result green?</h2>
-		<p>Here's how you can turn that frown upside down...</p>
+		<p>How you can turn that frown upside down.</p>
 
 		<div class="wp-block-columns mb-0" style="gap: 2rem; margin-top: 2rem;">
 			<div class="wp-block-column" style="display: flex; flex-direction: column;">
