@@ -25,22 +25,20 @@
 	}
 }
 
-@media screen and (min-width: 960px) {
-
-	.tgwf-content__wrapper > div:not(.wp-block-cover),
-	.tgwf-result__wrapper .wp-block-cover__inner-container {
-		margin-top: 4rem;
-		margin-bottom: 4rem;
-	}
-}
-
 
 /* 2. RESULT                          */
 .tgwf-result {
 	margin-top: 1rem;
 }
+.tgwf-result__title--help {
+	text-align: right;
+}
 .tgwf-result__icon {
 	height: 100%;
+}
+.tgwf-result__text--feedback {
+	font-size: 1rem;
+	font-size: var(--h4fontsize);
 }
 
 @media screen and (min-width: 767px) {
@@ -61,24 +59,24 @@
 	}
 }
 
-.tgwf-result-not-green .tgwf-result-overview {
+.tgwf-result-not-green span.wp-block-cover__background {
 	background-color: #525252;
 	color: white;
-	padding: 2rem;
-	border-top-left-radius: 2rem;
-	border-top-right-radius: 2rem;
+	opacity: 1;
 }
+
+.tgwf-result-not-green .tgwf-result__title,
+.tgwf-result-not-green .tgwf-result__title a,
+.tgwf-result-not-green .tgwf-result-overview,
 .tgwf-result-not-green .tgwf-result-details {
-	background-color: #525252;
-	color: white;
-	margin-top: 0;
-	padding: 0 2rem 2rem;
-	border-bottom-left-radius: 2rem;
-	border-bottom-right-radius: 2rem;
+	color: white !important;
 }
+
+.tgwf-result-not-green .tgwf-result__title,
 .tgwf-result-not-green .tgwf-result__result {
 	border-color: white;
 }
+
 
 /* 3. CHECK AGAIN                     */
 
