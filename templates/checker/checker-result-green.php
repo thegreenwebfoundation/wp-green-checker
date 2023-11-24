@@ -34,8 +34,8 @@
 
 			<div class="tgwf-result__hosted-by">
 
-				<p>Using data submitted to our <a href="https://www.thegreenwebfoundation.org/green-web-dataset/">Green Web Dataset</a>, 
-				we can match this website's IP address to a verified green provider.</p>
+				<p>We found evidence that this website runs on green energy. Using data submitted to our <a href="https://www.thegreenwebfoundation.org/green-web-dataset/">Green Web Dataset</a>, 
+				we can match this website's IP address to a verified green hosting provider.</p>
 
 				<?php
 				if ( isset( $green_check_result->hosted_by ) ) :
