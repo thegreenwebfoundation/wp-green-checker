@@ -24,9 +24,9 @@
 			<div class="tgwf-result__text">
 
 				<p class="tgwf-result__result">
-					<span class="tgwf-result__text--feedback">Oh dear!</span>
+					<span class="tgwf-result__text--feedback">With regret</span>
+					<span class="tgwf-result__text--hosting-outcome">No evidence found for</span>
 					<span class="tgwf-result__text--url"><?php echo esc_html( $green_check_result->url ); ?></span>
-					<span class="tgwf-result__text--hosting-outcome">is probably not hosted green</span>
 				</p>
 			</div>
 		</div>
@@ -44,13 +44,13 @@
 	</div>
 </div>
 
-<div class="wp-block-group mt-0">
+<div class="wp-block-group mt-0 mb-0">
 	<div class="wp-block-group__inner-container">
 
 		<h2 class="">Want to turn this result green?</h2>
 		<p>Here's how you can turn that frown upside down...</p>
 
-		<div class="wp-block-columns" style="gap: 2rem; margin-top: 2rem;">
+		<div class="wp-block-columns mb-0" style="gap: 2rem; margin-top: 2rem;">
 			<div class="wp-block-column" style="display: flex; flex-direction: column;">
 				<h3>For website owners</h3>
 				<p style="flex-grow: 1; padding-top: 0;"><span style="font-weight: 700">Share this result with your hosting provider.</span> Talk to your hosting provider and ask them to work with us so we can gather data and evidence about their renewable energy use. You can use our sample emails to help you raise your concerns.</p>

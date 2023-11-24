@@ -42,6 +42,10 @@
 .tgwf-result__icon {
 	height: 100%;
 }
+.tgwf-result__text--feedback {
+	font-size: 1rem;
+	font-size: var(--h4fontsize);
+}
 
 @media screen and (min-width: 767px) {
 
@@ -64,7 +68,7 @@
 .tgwf-result-not-green .tgwf-result-overview {
 	background-color: #525252;
 	color: white;
-	padding: 2rem;
+	padding: 2rem 2rem 0;
 	border-top-left-radius: 2rem;
 	border-top-right-radius: 2rem;
 }
@@ -79,6 +83,7 @@
 .tgwf-result-not-green .tgwf-result__result {
 	border-color: white;
 }
+
 
 /* 3. CHECK AGAIN                     */
 

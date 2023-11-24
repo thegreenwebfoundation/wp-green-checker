@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="gwf-app-cta wp-block-group alignfull">
+<div class="gwf-app-cta wp-block-group alignfull mt-0 mb-0">
 	<div class="wp-block-group__inner-container" style="margin-bottom: 0;">
 
 		<h2 class="gwf-app-cta__title">Found our Green Web Check useful?</h2>
@@ -20,10 +20,9 @@
 
 			<div class="wp-block-button is-style-primary gwf__threecols-t-p-b__button mt-0">
 				<a class="wp-block-button__link" href="https://www.thegreenwebfoundation.org/donate">
-				How donating works
+				Donate now
 				</a>
 			</div>
-
 
 			<h3 class="gwf__threecols-t-p-b__title gwf-iconbg-plant--black">Share your<br/>suggestions</h3>
 			<p class="gwf__threecols-t-p-b__para">We welcome your feedback on how to make our tools better.</p>
