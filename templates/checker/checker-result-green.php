@@ -41,7 +41,7 @@
 				if ( isset( $green_check_result->hosted_by ) ) :
 					?>
 
-					<p style="margin-top: 2rem; font-weight: bold;">Hosted by: <a href="/directory/#<?php echo esc_html( $green_check_result->hosted_by_id ); ?>"><?php echo esc_html( $green_check_result->hosted_by ); ?></a></p>																					
+					<p style="margin-top: 2rem; font-weight: bold;">Hosted by: <a href="https://app.greenweb.org/directory/#<?php echo esc_html( $green_check_result->hosted_by_id ); ?>"><?php echo esc_html( $green_check_result->hosted_by ); ?></a></p>																					
 
 					<?php
 					if ( isset( $green_check_result->supporting_documents ) ) :
