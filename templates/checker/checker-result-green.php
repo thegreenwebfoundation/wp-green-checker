@@ -35,7 +35,7 @@
 			<div class="tgwf-result__hosted-by">
 
 				<p>We found evidence that this website runs on green energy. Using data submitted to our <a href="https://www.thegreenwebfoundation.org/green-web-dataset/">Green Web Dataset</a>, 
-				we can match this website's IP address to a verified green hosting provider.</p>
+				we can match this website's IP address to a <a href="tools/green-web-dataset/get-verified/">verified green hosting provider</a>.</p>
 
 				<?php
 				if ( isset( $green_check_result->hosted_by ) ) :
@@ -50,16 +50,20 @@
 						if ( ! empty( $docs ) ) :
 							?>
 							<div class="tgwf-result__supporting-evidence">
-								<p>Supporting evidence for this hoster's claims:</p>
-								<ul style="margin: 1rem 0;">
-									<?php
-									foreach ( $docs as $doc ) :
-										?>
-										<li><a href="<?php echo esc_html( $doc->link ); ?>" target="_blank" rel="noopener noreferrer"><?php echo esc_html( $doc->title ); ?></a></li>
+								<details>
+									<summary>
+										<span style="text-decoration: underline; cursor: pointer;">View supporting evidence for this hoster's claims</span>
+									</summary>
+									<ul style="margin: 1rem 0;">
 										<?php
-									endforeach;
-									?>
-								</ul>
+										foreach ( $docs as $doc ) :
+											?>
+											<li><a href="<?php echo esc_html( $doc->link ); ?>" target="_blank" rel="noopener noreferrer"><?php echo esc_html( $doc->title ); ?></a></li>
+											<?php
+										endforeach;
+										?>
+									</ul>
+								</details>
 							</div>
 							<?php
 						endif;
@@ -69,7 +73,7 @@
 				endif;
 				?>	
 
-				<p class="mb-0" style="text-align: right;">Our take on <a href="https://www.thegreenwebfoundation.org/support/why-does-green-hosting-matter/">why green hosting matters.</a></p>
+				<p class="mb-0" style="margin-top: 1rem; text-align: right;">Our take on <a href="https://www.thegreenwebfoundation.org/support/why-does-green-hosting-matter/">why green hosting matters.</a></p>
 
 			</div>
 		</div>	
@@ -82,17 +86,20 @@
 	<div class="wp-block-group__inner-container">
 
 		<h2>Is this your website?</h2>
-		<p>Save this image or use the code to display this badge on your website, and show the world you are green!</p>
+		<p>Display this badge on your website to show you're using a <a href="tools/green-web-dataset/get-verified/">verified green hosting provider</a>, and support the transition to a fossil-free internet.
+			You can save the image or use the code to display it.</p>
 
 		<div class="wp-block-columns mb-0" style="gap: 2rem;">
 			<div class="wp-block-column">
-				<h3>Image</h3>
-				<img src="https://api.thegreenwebfoundation.org/greencheckimage/<?php echo esc_html( $green_check_result->url ); ?>?nocache=true" alt="This website is hosted Green - checked by thegreenwebfoundation.org">
+				<h3>Green Web badge</h3>
+				<img style="filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));" src="https://app.greenweb.org/api/v3/greencheckimage/<?php echo esc_html( $green_check_result->url ); ?>?nocache=true" alt="This website runs on green hosting - verified by thegreenwebfoundation.org" width="200px" height="95px">
+				<p>This image is in .png format and is 200px by 95px tall.</p>
+				<p><a href="https://www.thegreenwebfoundation.org/news/rebranded-green-web-badges/">Read about recent design changes</a>.</p>
 			</div>
 
 			<div class="wp-block-column">
 				<h3>Code</h3>
-				<pre><code><?php echo htmlspecialchars( '<img src="https://api.thegreenwebfoundation.org/greencheckimage/') . esc_html( $green_check_result->url ) . '?nocache=true' . htmlspecialchars( '" alt="This website is hosted Green - checked by thegreenwebfoundation.org">' ); ?></code></pre>
+				<pre style="filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));"><code><?php echo htmlspecialchars( '<img src="https://app.greenweb.org/api/v3/greencheckimage/') . esc_html( $green_check_result->url ) . '?nocache=true' . htmlspecialchars( '" alt="This website runs on green hosting - verified by thegreenwebfoundation.org" width="200px" height="95px">' ); ?></code></pre>
 			</div>
 		</div>
 	</div>
