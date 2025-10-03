@@ -39,10 +39,12 @@
 
 				<?php
 				if ( isset( $green_check_result->hosted_by ) ) :
+					$modified_date = date('d M Y', strtotime( $green_check_result->modified ) );
+					$retest_url = get_bloginfo( 'url' ) . "/green-web-check/?url=" . $green_check_result->url . "?nocache=true";
 					?>
 
 					<p style="margin-top: 2rem; font-weight: bold;">Hosted by: <a href="https://app.greenweb.org/directory/#<?php echo esc_html( $green_check_result->hosted_by_id ); ?>"><?php echo esc_html( $green_check_result->hosted_by ); ?></a></p>																					
-
+					
 					<?php
 					if ( isset( $green_check_result->supporting_documents ) ) :
 						$docs = $green_check_result->supporting_documents;
@@ -69,6 +71,9 @@
 						endif;
 					endif;
 					?>
+
+					<p style="margin-top: 2rem; font-size: 0.85em;">This url was last tested on <?php echo esc_html( $modified_date ); ?>. <a href="<?php echo esc_url( $retest_url ); ?>">Refresh check</a></p>
+
 					<?php
 				endif;
 				?>	
