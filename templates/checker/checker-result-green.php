@@ -39,7 +39,7 @@
 
 				<?php
 				if ( isset( $green_check_result->hosted_by ) ) :
-					$modified_date = date('d M Y', strtotime( $green_check_result->modified ) );
+					$modified_date = date('d M Y h:m', strtotime( $green_check_result->modified ) );
 					$retest_url = get_bloginfo( 'url' ) . "/green-web-check/?url=" . $green_check_result->url . "?nocache=true";
 					?>
 
