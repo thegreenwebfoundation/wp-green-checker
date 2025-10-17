@@ -72,7 +72,7 @@
 					endif;
 					?>
 
-					<p style="margin-top: 2rem; font-size: 0.85em;">This url was last tested on <?php echo esc_html( $modified_date ); ?>. <a href="<?php echo esc_url( $retest_url ); ?>">Refresh check</a></p>
+					<p style="margin-top: 2rem; font-size: 0.85em;">This url was last tested on <?php echo esc_html( $modified_date ); ?> UTC. <a href="<?php echo esc_url( $retest_url ); ?>">Refresh check</a></p>
 
 					<?php
 				endif;

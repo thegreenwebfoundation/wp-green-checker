@@ -40,7 +40,7 @@
 					$retest_url = get_bloginfo( 'url' ) . "/green-web-check/?url=" . $green_check_result->url . "?nocache=true";
 				?>
 
-				<p style="margin-top: 2rem; font-size: 0.85em;">This url was last tested on <?php echo esc_html( $modified_date ); ?>. <a style="color: white;" href="<?php echo esc_url( $retest_url ); ?>">Refresh check</a></p>
+				<p style="margin-top: 2rem; font-size: 0.85em;">This url was last tested on <?php echo esc_html( $modified_date ); ?> UTC. <a style="color: white;" href="<?php echo esc_url( $retest_url ); ?>">Refresh check</a></p>
 
 				<p class="mb-0" style="text-align: right;">Our take on <a style="color: white;" href="https://www.thegreenwebfoundation.org/support/why-does-green-hosting-matter/">why green hosting matters.</a></p>
 
