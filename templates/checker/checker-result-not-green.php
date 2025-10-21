@@ -36,8 +36,8 @@
 				<p><a style="color: white;" href="https://www.thegreenwebfoundation.org/support/why-does-my-website-show-up-as-grey-in-the-green-web-checker/">Why does my website show up as grey in the Green Web Checker?</a>
 			
 				<?php
-					$modified_date = date('d M Y h:m', strtotime( $green_check_result->modified ) );
-					$retest_url = get_bloginfo( 'url' ) . "/green-web-check/?url=" . $green_check_result->url . "?nocache=true";
+					$modified_date = date('d M Y h:i', strtotime( $green_check_result->modified ) );
+					$retest_url = get_bloginfo( 'url' ) . "/green-web-check/?url=" . $green_check_result->url . "&nocache=true";
 				?>
 
 				<p style="margin-top: 2rem; font-size: 0.85em;">This url was last tested on <?php echo esc_html( $modified_date ); ?> UTC. <a style="color: white;" href="<?php echo esc_url( $retest_url ); ?>">Refresh check</a></p>
