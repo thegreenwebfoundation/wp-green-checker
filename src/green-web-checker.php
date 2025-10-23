@@ -21,7 +21,7 @@ function tgwf_run_site_check() {
 	$cacheflag = '';
 
 	if ( isset( $_GET['nocache'] ) && ! empty( $_GET['nocache'] ) ) {
-		$cacheflag = '?' . $_GET['nocache'];
+		$cacheflag = '?nocache=' . $_GET['nocache'];
 	}
 
 	// Request and decode the response.
