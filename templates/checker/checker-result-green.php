@@ -41,9 +41,15 @@
 				if ( isset( $green_check_result->hosted_by ) ) :
 					$modified_date = date('d M Y h:i', strtotime( $green_check_result->modified ) );
 					$retest_url = get_bloginfo( 'url' ) . "/green-web-check/?url=" . $green_check_result->url . "&nocache=true";
-					?>
 
-					<p style="margin-top: 2rem; font-weight: bold;">Hosted by: <a href="https://app.greenweb.org/directory/#<?php echo esc_html( $green_check_result->hosted_by_id ); ?>"><?php echo esc_html( $green_check_result->hosted_by ); ?></a></p>																					
+					if ( $green_check_result->listed_provider ) :
+						$directory_link = '<a href="https://app.greenweb.org/directory/#' . esc_html( $green_check_result->hosted_by_id ) . '">' . esc_html( $green_check_result->hosted_by ) . '</a>';
+					else :
+						$directory_link = esc_html( $green_check_result->hosted_by );
+					endif;
+					?>
+						
+					<p style="margin-top: 2rem; font-weight: bold;">Hosted by: <?php echo $directory_link; ?></p>																					
 					
 					<?php
 					if ( isset( $green_check_result->supporting_documents ) ) :
